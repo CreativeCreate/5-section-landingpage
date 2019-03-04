@@ -16,6 +16,7 @@
 	margin-bottom: 0;
 	padding-bottom: 0;
 
+
 		// portrait view
 		// sm > position img left | text right
 		@media (min-width: $breakpoint__sm){
@@ -26,7 +27,6 @@
 			background-position-x: 40vw;
 
 		}
-
 			// md portrait view
 			// md > tall device, lets NOT take full viewport
 			@media (min-width: $breakpoint__md) and (orientation: portrait){
@@ -34,16 +34,13 @@
 				max-height: 500px; 
 			}
 
-		@media (min-width: $breakpoint__lg ){
-			background-position-x: 30vw;		
+		@media (min-width: $breakpoint__md ){
+			background-size: 100% auto;
+			background-position-x: 22vw;		
 		}
-
-		@media (min-width: $breakpoint__lg ) and (orientation: portrait){
-			background-position-x: right;	// right white-space fix in lg > portrait
-		} 
 		
 		@media (min-width: $breakpoint__xxl ){
-			background-position-x: 100%;
+			background-position-x: 22vw;
 		}
 
 		@media (min-width: $content__maxwidth ){
@@ -58,6 +55,11 @@
 		padding: 2rem 1rem;
 		background-color: $color__black;
 
+			// for mobile browser toolbar
+			@media (max-width: 640px){
+				padding-bottom: 6rem;
+			}
+
 			@media (min-width: $breakpoint__sm ){
 				background-color: transparent;
 				margin: 0;	
@@ -67,14 +69,20 @@
 
 	&__title {
 		font-family: $font__header;
-		font-size: convert(72);
+		font-size: convert(50);
 		color: $color__white;
 		line-height: 1;
-		margin-bottom: 1rem;			
+		margin-bottom: 1rem;
 
+			
 			@media (min-width: $breakpoint__sm ){
+				font-size: convert(72);
 				color: $color__black;
 			}	
+				// reduced font-size for 400 < height
+				@media (max-height: $breakpoint__sm ){
+					font-size: convert(50);
+				}
 
 			// md < and > sm
 			// reduce font size
