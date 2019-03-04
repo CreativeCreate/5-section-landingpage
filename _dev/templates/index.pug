@@ -1,13 +1,21 @@
 extends partials/base
 
-block pagehead
+block append pagehead
 	<!-- page meta -->
 	<title>5 Section Landing Page</title>
 	<meta name="description" content="Landing page with header/hero, features, pricing, team and footer sections">
 	<meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, Bootstrap, front-end, frontend, web development">
 
-block content
-	<section class="container">
-		<!-- body content -->
-		<p>body</p>
+block append content
+	<section class="wrapper container-fluid px-0">
+		<!-- header -->
+		include partials/c-hero.html
+		<!-- team -->
+		include partials/c-team.html
+		<!-- features -->
+		include partials/c-features.html
+		<!-- footer -->
+		include partials/c-footer.html
+		<!-- contact-form modal -->
+		include partials/c-modal-contactform.html
 	</section>

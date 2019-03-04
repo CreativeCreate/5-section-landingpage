@@ -1,1 +1,9 @@
 /* Custom Mixins -------------------- */
+
+/* 
+* convert px to rem
+* control font-size in <html>
+*/
+@function convert($value){
+    @return #{ $value/ 16 }rem;
+}

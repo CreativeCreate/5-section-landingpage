@@ -1,11 +1,27 @@
-//Custom variables
+// breakpoints
+$breakpoint__xs     : 0;
+$breakpoint__sm     : 576px;
+$breakpoint__md     : 768px;
+$breakpoint__lg     : 992px;
+$breakpoint__1024   : 1024px;	// custom
+$breakpoint__xl     : 1200px;
+$breakpoint__xxl    : 1366px;
+$content__maxwidth  : 1240px;
 
-// Descriptive color variables
-
-// Functional color variables
+// color variables
+$color__white       : rgb(255, 255, 255);
+$color__black       : rgb(51, 51, 51);
+$color__black-dark-2: rgb(48, 48, 48);
+$color__gray        : rgb(102, 102, 102);
+$color__green       : rgb(53, 204, 98);
+$color__error       : rgb(250, 101, 87);
 
 // Font stacks
+$font__serif        : "Lora", serif;
+$font__sans         : "Open Sans", sans-serif;
+$font__header       : "Montserrat", sans-serif;
+$font__icon         : "Font Awesome 5 Free";
 
 // Asset paths
-// $path-image   :   '../img';
-// $path-fonts     :  '../fonts';
+$path__image        :   '../images/';
+

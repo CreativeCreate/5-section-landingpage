@@ -32,6 +32,7 @@ const pathPublic = {
 gulp.task("concatScripts", function() {
 	return gulp.src([
 						pathDev.js+'vendor/jquery.js',
+						pathDev.js+'vendor/jquery-form-validate.js',
 						pathDev.js+'vendor/popper.js',
 						pathDev.js+'vendor/bootstrap.js',
 						pathDev.js+'custom/custom.js'

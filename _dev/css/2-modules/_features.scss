@@ -1,0 +1,59 @@
+//**
+// Features Module
+//**
+
+.features{
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	// text area
+	&__text{
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		@media (min-width: $breakpoint__sm){
+			text-align: left;
+		}
+
+		.features__sub-title {
+		  flex: 1 0 100%;
+		  font-size: convert(16);
+		  font-family: $font__header;
+		  color: $color__black;
+		  text-transform: uppercase;
+		  letter-spacing: convert(2);
+		  line-height: convert(26);
+		}
+
+		.features__title {
+		  flex: 1 0 100%;	
+		  font-size: convert(38);
+		  font-family: $font__header;
+		  color: $color__black;
+		  text-transform: capitalize;
+		  line-height: convert(46);
+		  margin-bottom: convert(35);
+		}
+
+		.features__description {
+		  flex: 1 0 100%;	
+		  font-size: convert(16);
+		  font-family: $font__sans;
+		  color: $color__gray;
+		  line-height: convert(26);
+		  letter-spacing: convert(1);
+		  margin-bottom: convert(45);
+		}
+
+		.btn{
+			
+			margin: auto;
+			@media (min-width: $breakpoint__sm){
+				margin: initial;
+			}
+		}
+
+	}
+
+}

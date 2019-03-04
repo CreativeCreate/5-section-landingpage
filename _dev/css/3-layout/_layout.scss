@@ -1,0 +1,81 @@
+/* 
+* COMMON LAYOUT
+*/
+.wrapper{
+
+	> header,
+	> section:not(.thankyou){
+		margin-bottom: convert(80);
+	}
+}
+
+.container,
+.hero > .container{
+	max-width: $content__maxwidth;
+}
+
+
+/* 
+* SECTION HEADER
+*/
+.section-header{
+	text-align: center;
+	margin-bottom: convert(75);
+
+	&__title{
+	  font-size: convert(38);
+	  font-family: $font__header;
+	  color: $color__black;
+	  line-height: convert(46);
+	}
+
+	&__description{
+ 	  font-size: convert(19);
+	  font-family: $font__header;
+ 	  font-weight: 300;
+	  color: $color__gray;
+	  line-height: convert(29);
+	}
+}
+
+
+/* 
+* THANK YOU PAGE
+*/
+
+.thankyou{
+	height: 100vh;
+	width: 100vw;
+	background-image: url($path__image+'bg-thankyou.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	> .row{
+		height: 100vh;
+		outline: 1px solid;
+	}
+
+	&__title{
+		font-size: convert(80);
+		font-family: $font__header;
+		color: $color__white;
+		text-align: center;
+	}
+	
+	&__message{
+		font-size: convert(19);
+		font-family: $font__header;
+		color: $color__white;
+		text-align: center;
+	}
+
+	&__name{
+		font-weight: bold;
+	}
+
+	.btn{
+		margin: auto;
+	}
+
+}

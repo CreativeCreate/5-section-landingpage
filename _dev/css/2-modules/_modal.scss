@@ -1,0 +1,18 @@
+//**
+// Modal Module
+//**
+
+.modal{
+
+	&-header{
+		
+		button.close{
+			margin-left: 0;
+		}
+
+		h5{
+			margin: auto;
+		}
+	}
+}
+

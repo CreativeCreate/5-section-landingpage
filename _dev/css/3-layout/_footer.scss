@@ -1,0 +1,43 @@
+/* 
+* footer
+*/
+
+.footer{
+
+	&__top{
+
+		padding-top: convert(80);
+		padding-bottom: convert(80);
+		background-color: $color__black;
+		font-size: convert(16);
+		font-family: $font__sans;
+		color: rgba($color__white, .6);
+		line-height: convert(23);
+		min-height: convert(250);
+	
+		&-title {
+		  font-size: convert(14);
+		  font-family: $font__header;
+		  color: $color__white;
+		  text-transform: uppercase;
+		  line-height: convert(26);
+		  letter-spacing: convert(1);
+		}
+
+	}
+	
+	&__bottom{
+		
+		// padding: 2rem 1rem;
+		background-color: $color__black-dark-2;
+		min-height: convert(60);
+
+		&-copyright{
+			font-size: convert(14);
+			font-family: $font__header;
+			color: rgba($color__white, .6 );
+			line-height: convert(23);
+		}
+
+	}
+}

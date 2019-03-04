@@ -2,4 +2,37 @@
 // Form Elements
 //**
 
+// Form Elms. overwrite Bootstrap
+.form-control{
+	height: convert(58);
+	padding-left: convert(20);
+	border-radius: convert(4);
+	background-color: rgba( $color__black, 0.012); 
+	border: convert(1) solid rgba( $color__black, 0.051);
 
+	&[aria-invalid=true]{
+		border-color: $color__error;
+		background-color: rgb(255, 243, 242);
+	}
+}
+
+textarea.form-control{
+  height: convert(128);
+}
+
+::placeholder{
+	font-size: convert(14);
+	font-family: $font__header;
+	color: $color__gray;
+}
+
+label {
+  font-size: convert(14);
+  font-family: $font__header;
+  color: $color__gray;
+  line-height: convert(1.2);
+
+  &.error{
+  	color: $color__error;
+  }
+}

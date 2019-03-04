@@ -3,12 +3,46 @@
 //**
 
 // Default button
+.btn{
+	font-family: $font__header;
+	font-size: convert(14);
+	line-height: convert(25);
+	letter-spacing: convert(1);
+	text-transform: uppercase;
 
+	&:hover,
+	&:focus{
+		text-decoration: none;
+	}
+}
 
-// Primary action button
+// Primary. Overwrite Bootstrap
+.btn-primary{
+	background-color: $color__green;
+	border-color: $color__green;
 
+	&:hover,
+	&:focus,
+	&:not(:disabled):not(.disabled):active,
+	&:active{
+		background-color: $color__gray;
+		border-color: $color__gray;
+		box-shadow: 0 0 0 0.2rem lighten( $color__gray, 50%);
+	}
+}
 
-// Larger button
+// Social btn
+.icon-social-circle > a{
+	margin: convert(10);
+	border-radius: convert(30);
+	width: convert(30);
+	line-height: convert(30);
+	text-decoration: none;
+	
+	color: rgba($color__white, .8 );
+	background-color: rgba($color__white, .1 );
 
-
-// Smaller button
+	&:hover{
+		color: $color__green;
+	}
+}

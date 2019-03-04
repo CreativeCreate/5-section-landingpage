@@ -1,1 +1,15 @@
 /* Base Styles -------------------- */
+
+html,
+body{
+	font-size: 14px;
+	font-weight: normal;
+	font-family: $font__sans;
+
+	@media (min-width: $breakpoint__lg){
+		font-size: 16px;
+	}
+}
+
+// color classes
+.vc-green{ color: $color__green; }
